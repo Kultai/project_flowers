@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.a {
+  color: #ff4081;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo span {
+  color: #ff4081;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fce4ec;
+  background: url("https://img.freepik.com/free-photo/flat-lay-pink-spring-roses-with-copy-space_23-2148894252.jpg?t=st=1727544408~exp=1727548008~hmac=c1438fe9e85b095721b05b91f9dba3852b6fde200963eb06abe8161a8b12fa4c&w=1800");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  color: #333;
+}
+
+.hero-content .btn {
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.hero-content > p {
+  margin: 30px 0px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.flower-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 15px 150px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 15px 0 10px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #e91e63;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1em;
+  color: #777;
+}
+nav ul li a:hover {
+  color: red;
+}
+
+footer {
+  background-color: palevioletred;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flower-cards {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+
+  .footer-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content p {
+    font-size: 0.8rem;
+  }
+
+  .footer-links ul li a {
+    font-size: 0.8rem;
+  }
+}
